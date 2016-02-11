@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "permissions": [
+        "storage",
+        "contextMenus"
+    ],
+    "name": "Carleton Timesheets",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://thehub.carleton.edu/WebAdvisor/WebAdvisor*"
+            ],
+            "js": ["fill_form.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
