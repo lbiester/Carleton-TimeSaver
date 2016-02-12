@@ -4,6 +4,10 @@ chrome.runtime.onMessage.addListener(
         loadTimes();
     } else if (request.message === "save_times") {
         saveTimes();
+    } else if (request.message === "clear_times") {
+        clearTimes();
+    } else if (request.message === "clear_form") {
+        clearForm();
     }
   }
 );
@@ -27,4 +31,17 @@ function loadTimes() {
             }
         }
     });
+}
+
+function clearTimes() {
+    chrome.storage.sync.clear();
+}
+
+function clearForm() {
+    for (var i = 1; i <= 28; i++) {
+        var start_time = "LIST_VAR4_" + i;
+        var end_time = "LIST_VAR5_" + i;
+        document.getElementById(start_time).value = "";
+        document.getElementById(end_time).value = "";
+    }
 }
