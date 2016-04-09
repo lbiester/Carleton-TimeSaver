@@ -3,7 +3,7 @@
     "permissions": [
         "storage"
     ],
-    "name": "Carleton Timesheets",
+    "name": "Carleton TimeSaver",
     "version": "0.1",
     "content_scripts": [
         {
