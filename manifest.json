@@ -8,7 +8,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://thehub.carleton.edu/WebAdvisor/WebAdvisor*"
+                "https://thehub.carleton.edu/WebAdvisor/WebAdvisor*",
+                "https://campushub.carleton.edu/WADFS/WADFS*"
             ],
             "js": ["scripts/fill_form.js"]
         }
