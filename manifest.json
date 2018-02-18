@@ -4,11 +4,10 @@
         "storage"
     ],
     "name": "Carleton TimeSaver",
-    "version": "1.0",
+    "version": "1.0.0.1",
     "content_scripts": [
         {
             "matches": [
-                "https://thehub.carleton.edu/WebAdvisor/WebAdvisor*",
                 "https://campushub.carleton.edu/WADFS/WADFS*"
             ],
             "js": ["scripts/fill_form.js"]
